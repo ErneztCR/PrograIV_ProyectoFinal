@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Software Store</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Software Store</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#productos">Productos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#noticias">Noticias</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Inicio -->
+    <section id="inicio" class="bg-primary text-white text-center py-5">
+        <div class="container">
+            <h1 class="display-4">¡Bienvenido a Software Store!</h1>
+            <p class="lead">Las mejores ofertas en licencias de software.</p>
+            <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="img/windows.jpg" class="d-block w-100" alt="Windows">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/office.jpg" class="d-block w-100" alt="Office">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/antivirus.jpg" class="d-block w-100" alt="Antivirus">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us -->
+    <section id="about" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-4">About Us</h2>
+            <p>Welcome to Software Store, your go-to platform for the latest software licenses, operating systems, and
+                games.</p>
+            <p>Bienvenido a Software Store, su plataforma para las últimas licencias de software, sistemas operativos y
+                juegos.</p>
+        </div>
+    </section>
+
+    <!-- Productos -->
+    <section id="productos" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Nuestros Productos</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="img/windows.jpg" class="card-img-top" alt="Windows">
+                        <div class="card-body">
+                            <h5 class="card-title">Licencia Windows</h5>
+                            <p class="card-text">Precio: $99.99</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Agregar más productos similares -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Noticias -->
+    <section id="noticias" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-4">Noticias</h2>
+            <p>Últimas noticias sobre informática, sistemas y juegos.</p>
+        </div>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contacto" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Contáctanos</h2>
+            <form>
+                <div class="mb-3">
+                    <label for="name" class="form-label">Nombre</label>
+                    <input type="text" class="form-control" id="name">
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Correo Electrónico</label>
+                    <input type="email" class="form-control" id="email">
+                </div>
+                <div class="mb-3">
+                    <label for="message" class="form-label">Mensaje</label>
+                    <textarea class="form-control" id="message" rows="3"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Enviar</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2024 Software Store. Contacto: support@softwarestore.com | Tel: +123456789</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

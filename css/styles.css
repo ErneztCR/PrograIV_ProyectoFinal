@@ -1,0 +1,19 @@
+/* Estilos personalizados */
+.nav-link:hover {
+    color: #f8c146 !important;
+    transition: color 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s;
+}
+
+footer {
+    background-color: #222;
+}
+
+.carousel img {
+    height: 400px;
+    object-fit: cover;
+}
