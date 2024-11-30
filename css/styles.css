@@ -4,16 +4,50 @@
     transition: color 0.3s;
 }
 
+/* Uniformidad en las imágenes de productos */
+.card img {
+    height: 200px;
+    /* Ajusta según el diseño */
+    object-fit: cover;
+    width: 100%;
+}
+
+/* Ajusta las noticias */
+.card {
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
 .card:hover {
     transform: scale(1.05);
-    transition: transform 0.3s;
+    /* Efecto de zoom en hover */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    /* Sombra más pronunciada */
 }
+
 
 footer {
     background-color: #222;
 }
 
 .carousel img {
-    height: 400px;
-    object-fit: cover;
+    width: 100%;
+    /* Asegura que ocupe el ancho completo del carrusel */
+    height: 100%;
+    /* Ajusta al alto del contenedor del carrusel */
+    object-fit: contain;
+    /* Escala la imagen sin recortar, respetando su proporción */
+    background-color: #f0f0f0;
+    /* Agrega un fondo neutro si hay áreas vacías */
+}
+
+.carousel-inner {
+    height: 500px;
+    /* Ajusta esta altura según el diseño deseado */
+}
+
+@media (max-width: 768px) {
+    .carousel-inner {
+        height: 300px;
+        /* Reduce la altura en dispositivos móviles */
+    }
 }
