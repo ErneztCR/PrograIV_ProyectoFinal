@@ -4,18 +4,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Software Store</title>
+    <!-- Metadatos -->
+    <meta name="author" content="Grupo 1">
+    <!-- Descripcion del sitio web -->
+    <meta name="description"
+        content="InnoKeys - Soluciones de software con licencias originales para empresas y particulares. Encuentra herramientas para optimizar tu productividad y gestión tecnológica.">
+    <!-- Keywords identificadores -->
+    <meta name="keywords"
+        content="software, licencias, herramientas tecnológicas, productividad, soluciones empresariales, software original, gestión tecnológica, compra de software">
+    <!-- Bootstrap CDN CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.1/font/bootstrap-icons.min.css"
+        rel="stylesheet">
+    <!-- Fontawesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+        integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="./css/styles.css">
+    <!-- Enterprise Ico -->
     <link rel="icon" href="image/software.png">
+    <!-- Titulo sitio web -->
+    <title>InnoKeys Store</title>
 </head>
 
 <body>
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
-            <img src="image/software.png" width="40" style="margin-right: 10px;"  alt="logo">
-            <a class="navbar-brand" href="#">Software Store</a>
+            <img src="image/software.png" width="40" style="margin-right: 10px;" alt="logo">
+            <a class="navbar-brand" href="#">InnoKeys Store</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -34,7 +53,7 @@
     <!-- Inicio -->
     <section id="inicio" class="bg-primary text-white text-center py-5">
         <div class="container">
-            <h1 class="display-4">¡Bienvenido a Software Store!</h1>
+            <h1 class="display-4">¡Bienvenido a InnoKeys Store!</h1>
             <p class="lead">Las mejores ofertas en licencias de software.</p>
             <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
@@ -64,42 +83,273 @@
     <section id="about" class="py-5 bg-light">
         <div class="container">
             <h2 class="text-center mb-4">About Us</h2>
-            <p style="text-align: center;">Welcome to Software Store, your go-to platform for the latest software licenses, operating systems, and
+            <p style="text-align: center;">Welcome to InnoKeys Store, your go-to platform for the latest software
+                licenses, operating systems, and
                 games.</p>
-            <p style="text-align: center;">Bienvenido a Software Store, su plataforma para las últimas licencias de software, sistemas operativos y
+            <p style="text-align: center;">Bienvenido a InnoKeys Store, su plataforma para las últimas licencias de
+                software, sistemas operativos y
                 juegos.</p>
         </div>
     </section>
-
-    <!-- Productos -->
-    <section id="productos" class="py-5">
+    <!-- Productos Section -->
+    <section id="productos" class="productos">
         <div class="container">
-            <h2 class="text-center mb-4">Nuestros Productos</h2>
-            <div class="row g-4">
-                <div class="col-md-4">
-                    <div class="card">
-                        <img src="./image/windows-11-pro-dvd.webp" class="card-img-top" alt="Windows">
+            <h2 class="text-center">Nuestros Productos</h2>
+            <p class="text-center">Aquí encontrarás diferentes opciones.</p>
+
+            <div class="row">
+                <!-- Windows 11 -->
+                <div class="col-12 col-sm-6 col-lg-4">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="./image/Products/software-1.png" alt="Windows 11">
+                        </div>
                         <div class="card-body">
-                            <h5 class="card-title">Licencia Windows</h5>
-                            <p class="card-text">Precio: $99.99</p>
+                            <h5>Windows 11 Pro</h5>
+                            <p>Licencia original de Windows 11 Pro con activación inmediata.</p>
+                            <div class="product-footer">
+                                <span class="product-price">Desde $30</span>
+                                <div class="button-container">
+                                    <button class="btn btn-outline-primary" data-bs-toggle="modal"
+                                        data-bs-target="#modal-windows11">
+                                        Ver más
+                                    </button>
+                                    <button class="btn btn-primary">Comprar</button>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="card">
-                        <img src="./image/OfficeProfessionalPlus2019.jpg" class="card-img-top" alt="Office">
+
+                <!-- Office -->
+                <div class="col-12 col-sm-6 col-lg-4">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="./image/Products/software-2.jpg" alt="Microsoft Office">
+                        </div>
                         <div class="card-body">
-                            <h5 class="card-title">Licencia Office</h5>
-                            <p class="card-text">Precio: $79.99</p>
+                            <h5>Microsoft Office 365</h5>
+                            <p>Suite completa de Office con todas las aplicaciones incluidas.</p>
+                            <div class="product-footer">
+                                <span class="product-price">Desde $63.75</span>
+                                <div class="button-container">
+                                    <button class="btn btn-outline-primary" data-bs-toggle="modal"
+                                        data-bs-target="#modal-office">
+                                        Ver más
+                                    </button>
+                                    <button class="btn btn-primary">Comprar</button>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="card">
-                        <img src="./image/AVG-Anti-Virus-2016.jpg" class="card-img-top" alt="Antivirus">
+
+                <!-- Antivirus -->
+                <div class="col-12 col-sm-6 col-lg-4">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="./image/Products/software-3.jpg" alt="Antivirus">
+                        </div>
                         <div class="card-body">
-                            <h5 class="card-title">Licencia Antivirus</h5>
-                            <p class="card-text">Precio: $49.99</p>
+                            <h5>Antivirus Premium</h5>
+                            <p>Protección completa para todos tus dispositivos contra amenazas.</p>
+                            <div class="product-footer">
+                                <span class="product-price">Desde $49.99</span>
+                                <div class="button-container">
+                                    <button class="btn btn-outline-primary" data-bs-toggle="modal"
+                                        data-bs-target="#modal-antivirus">
+                                        Ver más
+                                    </button>
+                                    <button class="btn btn-primary">Comprar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Canva Pro -->
+                <div class="col-12 col-sm-6 col-lg-4">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="./image/Products/software-4.jpg" alt="Canva Pro">
+                        </div>
+                        <div class="card-body">
+                            <h5>Canva Pro</h5>
+                            <p>Herramienta profesional de diseño gráfico con acceso a millones de recursos premium.</p>
+                            <div class="product-footer">
+                                <span class="product-price">Desde $12.99</span>
+                                <div class="button-container">
+                                    <button class="btn btn-outline-primary" data-bs-toggle="modal"
+                                        data-bs-target="#modal-canva">
+                                        Ver más
+                                    </button>
+                                    <button class="btn btn-primary">Comprar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Adobe Creative Cloud -->
+                <div class="col-12 col-sm-6 col-lg-4">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="./image/Products/software-5.jpg" alt="Adobe Creative Cloud">
+                        </div>
+                        <div class="card-body">
+                            <h5>Adobe Creative Cloud</h5>
+                            <p>Suite completa de aplicaciones creativas de Adobe para diseño, video y web.</p>
+                            <div class="product-footer">
+                                <span class="product-price">Desde $54.99</span>
+                                <div class="button-container">
+                                    <button class="btn btn-outline-primary" data-bs-toggle="modal"
+                                        data-bs-target="#modal-adobe">
+                                        Ver más
+                                    </button>
+                                    <button class="btn btn-primary">Comprar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Más Productos -->
+                <div class="col-12 col-sm-6 col-lg-4">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="./image/Products/software-others.jpg" alt="Más Productos">
+                        </div>
+                        <div class="card-body">
+                            <h5>¿Necesitas otro producto?</h5>
+                            <p>
+                                Contamos con más opciones de software. Contáctanos para conocer nuestra gama completa de
+                                productos.
+                            </p>
+                            <div class="product-footer">
+                                <span class="product-price">¡Consúltanos!</span>
+                                <div class="button-container">
+                                    <a href="#contacto" class="btn btn-primary w-100">Contactar</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Modals -->
+                <!-- Modal Windows 11 -->
+                <div class="modal fade" id="modal-windows11">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title">Windows 11 Pro - Detalles</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                            </div>
+                            <div class="modal-body">
+                                <ul class="product-features">
+                                    <li><i class="fas fa-check-circle"></i> Activación digital inmediata</li>
+                                    <li><i class="fas fa-check-circle"></i> Soporte técnico 24/7</li>
+                                    <li><i class="fas fa-check-circle"></i> Garantía de por vida</li>
+                                    <li><i class="fas fa-check-circle"></i> Actualizaciones automáticas</li>
+                                    <li><i class="fas fa-check-circle"></i> Compatible con todos los programas</li>
+                                </ul>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Modal Office -->
+                <div class="modal fade" id="modal-office">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title">Microsoft Office 365 - Detalles</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                            </div>
+                            <div class="modal-body">
+                                <ul class="product-features">
+                                    <li><i class="fas fa-check-circle"></i> Word, Excel, PowerPoint y más</li>
+                                    <li><i class="fas fa-check-circle"></i> 1TB de almacenamiento en OneDrive</li>
+                                    <li><i class="fas fa-check-circle"></i> Hasta 5 dispositivos</li>
+                                    <li><i class="fas fa-check-circle"></i> Actualizaciones incluidas</li>
+                                    <li><i class="fas fa-check-circle"></i> Soporte técnico prioritario</li>
+                                </ul>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Modal Antivirus -->
+                <div class="modal fade" id="modal-antivirus">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title">Antivirus Premium - Detalles</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                            </div>
+                            <div class="modal-body">
+                                <ul class="product-features">
+                                    <li><i class="fas fa-check-circle"></i> Protección en tiempo real</li>
+                                    <li><i class="fas fa-check-circle"></i> Firewall avanzado</li>
+                                    <li><i class="fas fa-check-circle"></i> VPN incluida</li>
+                                    <li><i class="fas fa-check-circle"></i> Protección contra ransomware</li>
+                                    <li><i class="fas fa-check-circle"></i> Control parental</li>
+                                </ul>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Modal Canva Pro -->
+                <div class="modal fade" id="modal-canva">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title">Canva Pro - Detalles</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                            </div>
+                            <div class="modal-body">
+                                <ul class="product-features">
+                                    <li><i class="fas fa-check-circle"></i> +100 millones de recursos premium</li>
+                                    <li><i class="fas fa-check-circle"></i> Herramientas de marca</li>
+                                    <li><i class="fas fa-check-circle"></i> Planificador de contenido</li>
+                                    <li><i class="fas fa-check-circle"></i> Removedor de fondos ilimitado</li>
+                                    <li><i class="fas fa-check-circle"></i> 100GB de almacenamiento</li>
+                                </ul>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Modal Adobe Creative Cloud -->
+                <div class="modal fade" id="modal-adobe">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title">Adobe Creative Cloud - Detalles</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                            </div>
+                            <div class="modal-body">
+                                <ul class="product-features">
+                                    <li><i class="fas fa-check-circle"></i> Todas las aplicaciones de Adobe</li>
+                                    <li><i class="fas fa-check-circle"></i> Photoshop, Illustrator, Premiere Pro</li>
+                                    <li><i class="fas fa-check-circle"></i> Adobe Fonts incluido</li>
+                                    <li><i class="fas fa-check-circle"></i> 100GB de almacenamiento en la nube</li>
+                                    <li><i class="fas fa-check-circle"></i> Actualizaciones incluidas</li>
+                                </ul>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -107,82 +357,62 @@
         </div>
     </section>
 
-    <!-- Noticias -->
-    <section id="noticias" class="py-5 bg-light">
-        <div class="container">
-            <h2 class="text-center mb-4">Noticias</h2>
-            <div class="row g-4">
-                <div class="col-md-4">
-                    <div class="card h-100">
-                        <img src="./image/noticiaNuevaVeriondeWindows.jpeg" class="card-img-top" alt="Noticia 1">
-                        <div class="card-body">
-                            <h5 class="card-title">Nueva versión de Windows</h5>
-                            <p class="card-text">Descubre las novedades que trae Windows en su última versión.</p>
-                            <a href="https://www.xataka.com/basics/24h2-windows-11-lista-todas-novedades-esta-gran-actualizacion-como-actualizar" target="_blank" class="btn btn-primary">Leer más</a>
+    <!-- Formulario de Contacto -->
+    <section id="contacto" class="reserva dark-section bg-dark text-white p-4 rounded shadow">
+        <div class="container ">
+            <h2 class="section-title text-center">Contáctanos</h2>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <form>
+                        <!-- Nombre del cliente -->
+                        <div class="mb-3">
+                            <label class="form-label">Nombre:</label>
+                            <input type="text" class="form-control" placeholder="Ingrese su nombre completo" required>
                         </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card h-100">
-                        <img src="./image/noticiaActualizaciondeOffice.jpg" class="card-img-top" alt="Noticia 2">
-                        <div class="card-body">
-                            <h5 class="card-title">Actualizaciones en Office</h5>
-                            <p class="card-text">Nuevas funcionalidades para mejorar tu productividad.</p>
-                            <a href="https://viatea.es/noticias/microsoft-365-copilot-nuevas-funciones-actualizaciones/" target="_blank" class="btn btn-primary">Leer más</a>
+                        <!-- Producto o servicio de interés -->
+                        <div class="mb-3">
+                            <label class="form-label">Producto o servicio de interés</label>
+                            <input type="text" class="form-control" placeholder="Especifique el producto o servicio"
+                                required>
                         </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card h-100">
-                        <img src="./image/noticiaTendenciaenVidejuegos.webp" class="card-img-top" alt="Noticia 3">
-                        <div class="card-body">
-                            <h5 class="card-title">Tendencias en videojuegos</h5>
-                            <p class="card-text">Explora los juegos más esperados del año.</p>
-                            <a href="https://www.hobbyconsolas.com/reportajes/14-modas-tendencias-van-definir-gaming-videojuegos-2024-1352401" target="_blank" class="btn btn-primary">Leer más</a>
+                        <!-- Dirección de entrega -->
+                        <div class="mb-3">
+                            <label class="form-label">Dirección:</label>
+                            <input type="text" class="form-control" placeholder="Provincia, Cantón, Distrito" required>
                         </div>
-                    </div>
+                        <!-- Celular para contacto -->
+                        <div class="mb-3">
+                            <label class="form-label">Celular: </label>
+                            <input type="tel" class="form-control" placeholder="8888-8888" required>
+                        </div>
+                        <!-- Teléfono fijo de la empresa -->
+                        <div class="mb-3">
+                            <label class="form-label">Teléfono:</label>
+                            <input type="tel" class="form-control" placeholder="2222-2222" required>
+                        </div>
+                        <!-- Mensaje del cliente -->
+                        <div class="mb-3">
+                            <label class="form-label">Mensaje:</label>
+                            <textarea class="form-control" rows="4" placeholder="Escriba su mensaje o consulta aquí"
+                                required></textarea>
+                        </div>
+                        <!-- Botón de envío -->
+                        <div class="text-center mb-4">
+                            <button type="submit" class="btn btn-primary btn-lg px-5">
+                                Enviar Consulta
+                                <i class="fas fa-paper-plane ms-2"></i>
+                            </button>
+                        </div>
+                    </form>
                 </div>
             </div>
-        </div>
-    </section>
-
-    <!-- Contacto -->
-    <section id="contacto" class="py-5">
-        <div class="container">
-            <h2 class="text-center mb-4">Contáctanos</h2>
-            <form>
-                <div class="mb-3">
-                    <label for="name" class="form-label">Nombre</label>
-                    <input type="text" class="form-control" id="name">
-                </div>
-                <div class="mb-3">
-                    <label for="name" class="form-label">Producto de interés</label>
-                    <input type="text" class="form-control" id="name">
-                </div>
-                <div class="mb-3">
-                    <label for="name" class="form-label">Dirección de entrega</label>
-                    <input type="text" class="form-control" id="name">
-                </div>
-                <div class="mb-3">
-                    <label for="email" class="form-label">Correo Electrónico</label>
-                    <input type="email" class="form-control" id="email">
-                </div>
-                <div class="mb-3">
-                    <label for="name" class="form-label">Celular</label>
-                    <input type="text" class="form-control" id="name">
-                </div>
-                <div class="mb-3">
-                    <label for="message" class="form-label">Mensaje</label>
-                    <textarea class="form-control" id="message" rows="3"></textarea>
-                </div>
-                <button type="submit" class="btn btn-primary">Enviar</button>
-            </form>
+            <hr class="my-4 bg-light">
         </div>
     </section>
 
     <!-- Footer -->
     <footer class="bg-dark text-white text-center py-3">
-        <p>&copy; 2024 Software Store. Contacto: support@softwarestore.com | Tel: (+506) 12345678</p>
+        <p>&copy; 2024 InnoKeys Store. Contacto: support@innokeysstore.com | Tel: (+506) 2525-2020</p>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>

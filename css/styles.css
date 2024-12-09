@@ -24,6 +24,188 @@
     /* Sombra más pronunciada */
 }
 
+/* ===========================================
+   SECCIÓN DE PRODUCTOS
+   ===========================================
+   Estilos generales para la sección de productos,
+   incluyendo layout y espaciado base
+*/
+.productos {
+    padding: 2.5rem;
+    background-color: white;
+}
+
+/* ===========================================
+   TARJETAS DE PRODUCTO
+   ===========================================
+   Estilos para las tarjetas individuales de producto,
+   incluyendo bordes, sombras y efectos hover
+*/
+.product-card {
+    border: none;
+    border-radius: 15px;
+    overflow: hidden;
+    margin-bottom: 30px;
+    border: 1px solid #e0e0e0;
+    transition: all 0.3s ease; /* Transición suave para efectos hover */
+}
+
+    /* Efecto de elevación al pasar el mouse */
+    .product-card:hover {
+        transform: translateY(0.5rem);
+    }
+
+/* ===========================================
+   IMÁGENES DE PRODUCTO
+   ===========================================
+   Configuración para las imágenes de productos,
+   asegurando consistencia en tamaño y presentación
+*/
+.product-image {
+    background: #f8f9fa; /* Fondo claro para imágenes */
+    text-align: center;
+}
+
+    .product-image img {
+        width: 100%;
+        height: 170px;
+        object-fit: contain; /* Mantiene las proporciones de la imagen */
+    }
+
+/* ===========================================
+   CONTENIDO DE TARJETAS
+   ===========================================
+   Estilos para el contenido textual y elementos
+   internos de las tarjetas de producto
+*/
+.card-body {
+    padding: 1.25rem;
+}
+
+    /* Título del producto */
+    .card-body h5 {
+        margin-bottom: 15px;
+    }
+
+    /* Descripción del producto */
+    .card-body p {
+        color: #666;
+        margin-bottom: 20px;
+    }
+
+/* ===========================================
+   LISTA DE CARACTERÍSTICAS
+   ===========================================
+   Estilos para la lista de características en el modal,
+   incluyendo iconos y espaciado
+*/
+.product-features {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 24px;
+}
+
+    .product-features li {
+        margin-bottom: 8px;
+    }
+
+    /* Iconos en la lista de características */
+    .product-features i {
+        color: #28a745; /* Verde para checkmarks */
+        margin-right: 8px;
+    }
+
+/* ===========================================
+   FOOTER DE TARJETA
+   ===========================================
+   Estilos para el área inferior de la tarjeta,
+   incluyendo precio y botones
+*/
+.product-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Precio del producto */
+.product-price {
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+/* Contenedor de botones de acción */
+.button-container {
+    display: flex;
+    gap: 10px; /* Espacio entre botones */
+}
+
+/* ===========================================
+   RESPONSIVE DESIGN
+   ===========================================
+   Ajustes para diferentes tamaños de pantalla,
+   asegurando una experiencia óptima en celulares
+*/
+@media (max-width: 768px) {
+    /* Ajuste de padding en celulares */
+    .productos {
+        padding: 1.25rem;
+    }
+
+    /* Reorganización del footer en celulares */
+    .product-footer {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    /* Botones a ancho completo en celulares */
+    .button-container {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    /* Ajuste de altura de imagen en celulares */
+    .product-image img {
+        height: 200px;
+    }
+}
+
+/* Uniformidad en las imágenes de productos */
+.card img {
+    height: 200px;
+    /* Ajusta según el diseño */
+    object-fit: cover;
+    width: 100%;
+}
+
+/* Ajusta las noticias */
+.card {
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    /* Efecto de zoom en hover */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    /* Sombra más pronunciada */
+}
+
+/* ======================================
+   SECCIÓN DE FORMULARIO
+   ====================================== */
+
+  .reserva {
+    padding: 40px;
+}
+
+/* Campos del formulario */
+.form-control {
+    margin-bottom: 1rem;
+}
+
+.form-label {
+    margin-bottom: 0.5rem;
+}
 
 footer {
     background-color: #222;
