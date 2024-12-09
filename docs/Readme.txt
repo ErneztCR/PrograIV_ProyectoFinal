@@ -70,10 +70,10 @@ inno-keys/
 Todos los derechos reservados © 2024 InnoKeys.
 
 ## 👨‍💻 Autores
-Kevin Alfaro Lopez
-Luis Angel Chaves Mora
-Samantha Fonseca Bermudez
-Mario Rodriguez Barboza
+- Kevin Alfaro Lopez
+- Luis Angel Chaves Mora
+- Samantha Fonseca Bermudez
+- Mario Rodriguez Barboza
 
 Curso: Programación IV
 Profesor: Ing. Pedro Vargas J.
