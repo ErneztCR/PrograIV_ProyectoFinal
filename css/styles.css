@@ -4,6 +4,17 @@
     transition: color 0.3s;
 }
 
+/* Estilos para la imagen del logo en la barra de navegación */
+.logo-img {
+    width: 40px; /* Tamaño de la imagen */
+    margin-right: 10px; /* Espacio entre el logo y el texto */
+}
+
+/* Estilo para centrar texto */
+.text-center {
+    text-align: center;
+}
+
 /* Uniformidad en las imágenes de productos */
 .card img {
     height: 200px;
