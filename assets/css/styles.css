@@ -1,0 +1,300 @@
+/* ======================================
+   ESTILOS GENERALES
+   ====================================== 
+   Esta sección define los estilos base que se aplican 
+   a todo el sitio web, incluyendo tipografía y layout básico
+*/
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+.text-center {
+    text-align: center;
+}
+.dark-section {
+    color: white;
+    background-color: #1b1b32;
+  }
+  .section-text {
+    font-size: 1.2rem;
+  }
+  .section-tittle {
+    font-size: 2rem;
+    padding: 15px 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, Arial;
+  }
+/* ======================================
+   BARRA DE NAVEGACIÓN
+   ====================================== 
+   Estilos para la barra de navegación principal
+   que permanece fija en la parte superior
+*/
+.navbar {
+    padding: 0.2rem 0;
+    background-color: black;
+}
+
+/* Enlaces de navegación */
+.navbar .nav-link {
+    font-weight: 500;
+    transition: color 0.3s ease; /* Transición suave al hacer hover */
+}
+
+.navbar .nav-link:hover {
+    color: #0d6efd; /* Azul al pasar el mouse */
+}
+
+.navbar-collapse {
+    align-items: center;
+    justify-content: space-between; /* Distribuye elementos uniformemente */
+}
+
+/* Logo en la barra de navegación */
+.navbar-brand img {
+    height: 40px; /* Altura fija para mantener consistencia */
+}
+
+/* ======================================
+   INICIO
+   ====================================== 
+   Estilos para la secccion inicio
+*/
+.inicio{
+    padding-top: 3.5rem;
+    padding-bottom: 3rem;
+    scroll-margin-top: 2px; /* Ajusta este valor según la altura de tu navbar */
+}
+.carousel img {
+    width: 100%;
+    /* Asegura que ocupe el ancho completo del carrusel */
+    height: 100%;
+    /* Ajusta al alto del contenedor del carrusel */
+    object-fit: contain;
+    /* Escala la imagen sin recortar, respetando su proporción */
+    background-color: #f0f0f0;
+    /* Agrega un fondo neutro si hay áreas vacías */
+}
+
+.carousel-inner {
+    height: 500px;
+    /* Ajusta esta altura según el diseño deseado */
+}
+
+@media (max-width: 768px) {
+    .carousel-inner {
+        height: 300px;
+        /* Reduce la altura en dispositivos móviles */
+    }
+}
+/* ======================================
+   ABOUT US
+   ====================================== 
+   Estilos para la secccion about us
+*/
+.about{
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    scroll-margin-top: 20px; /* Ajusta este valor según la altura de tu navbar */
+}
+
+.about .div-container {
+    max-width: 600px;
+    text-align: center;
+}
+
+/* ===========================================
+   SECCIÓN DE PRODUCTOS
+   ===========================================
+   Estilos generales para la sección de productos,
+   incluyendo layout y espaciado base
+*/
+.productos {
+    padding: 2.5rem;
+    background-color: white;
+    scroll-margin-top: 40px; /* Ajusta este valor según la altura de tu navbar */
+}
+
+/* ===========================================
+   TARJETAS DE PRODUCTO
+   ===========================================
+   Estilos para las tarjetas individuales de producto,
+   incluyendo bordes, sombras y efectos hover
+*/
+.product-card {
+    border: none;
+    border-radius: 15px;
+    overflow: hidden;
+    margin-bottom: 30px;
+    border: 1px solid #e0e0e0;
+    transition: all 0.3s ease; /* Transición suave para efectos hover */
+}
+
+    /* Efecto de elevación al pasar el mouse */
+    .product-card:hover {
+        transform: translateY(0.5rem);
+    }
+
+/* ===========================================
+   IMÁGENES DE PRODUCTO
+   ===========================================
+   Configuración para las imágenes de productos,
+   asegurando consistencia en tamaño y presentación
+*/
+.product-image {
+    background: #f8f9fa; /* Fondo claro para imágenes */
+    text-align: center;
+}
+
+    .product-image img {
+        width: 100%;
+        height: 170px;
+        object-fit: contain; /* Mantiene las proporciones de la imagen */
+    }
+
+/* ===========================================
+   CONTENIDO DE TARJETAS
+   ===========================================
+   Estilos para el contenido textual y elementos
+   internos de las tarjetas de producto
+*/
+.card-body {
+    padding: 1.25rem;
+}
+
+    /* Título del producto */
+    .card-body h5 {
+        margin-bottom: 15px;
+    }
+
+    /* Descripción del producto */
+    .card-body p {
+        color: #666;
+        margin-bottom: 20px;
+    }
+
+/* ===========================================
+   LISTA DE CARACTERÍSTICAS
+   ===========================================
+   Estilos para la lista de características en el modal,
+   incluyendo iconos y espaciado
+*/
+.product-features {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 24px;
+}
+
+    .product-features li {
+        margin-bottom: 8px;
+    }
+
+    /* Iconos en la lista de características */
+    .product-features i {
+        color: #28a745; /* Verde para checkmarks */
+        margin-right: 8px;
+    }
+
+/* ===========================================
+   FOOTER DE TARJETA
+   ===========================================
+   Estilos para el área inferior de la tarjeta,
+   incluyendo precio y botones
+*/
+.product-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Precio del producto */
+.product-price {
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+/* Contenedor de botones de acción */
+.button-container {
+    display: flex;
+    gap: 10px; /* Espacio entre botones */
+}
+
+/* ===========================================
+   RESPONSIVE DESIGN
+   ===========================================
+   Ajustes para diferentes tamaños de pantalla,
+   asegurando una experiencia óptima en celulares
+*/
+@media (max-width: 768px) {
+    /* Ajuste de padding en celulares */
+    .productos {
+        padding: 1.25rem;
+    }
+
+    /* Reorganización del footer en celulares */
+    .product-footer {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    /* Botones a ancho completo en celulares */
+    .button-container {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    /* Ajuste de altura de imagen en celulares */
+    .product-image img {
+        height: 200px;
+    }
+}
+
+/* ======================================
+   NOTICIAS
+   ====================================== 
+   Estilos para la secccion Noticias
+*/
+.noticias{
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    scroll-margin-top: 20px; /* Ajusta este valor según la altura de tu navbar */
+}
+/* Uniformidad en las imágenes de noticias */
+.card img {
+    height: 200px;
+    /* Ajusta según el diseño */
+    object-fit: cover;
+    width: 100%;
+}
+
+/* Ajusta las noticias */
+.card {
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    /* Efecto de zoom en hover */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    /* Sombra más pronunciada */
+}
+
+/* ======================================
+   SECCIÓN DE FORMULARIO
+   ====================================== */
+
+.reserva {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    scroll-margin-top: 20px; /* Ajusta este valor según la altura de tu navbar */
+}
+/* Campos del formulario */
+.form-control {
+    margin-bottom: 1rem;
+}
+
+.form-label {
+    margin-bottom: 0.5rem;
+}
