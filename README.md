@@ -70,7 +70,6 @@ inno-keys/
 Todos los derechos reservados © 2024 InnoKeys.
 
 ## 👨‍💻 Autores
-- Kevin Alfaro Lopez
 - Luis Angel Chaves Mora
 - Samantha Fonseca Bermudez
 - Mario Rodriguez Barboza
