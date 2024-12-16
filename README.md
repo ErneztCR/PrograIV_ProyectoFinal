@@ -27,7 +27,7 @@ PROGRAMAIV_PROYECTOFINAL
 │   │   │   ├── software-4.jpg
 │   │   │   ├── software-5.jpg
 │   │   │   └── software-others.jpg
-│   │   ├── banner-1.jpg
+│   │   ├── banner-1-main.jpg
 │   │   ├── banner-2.jpg
 │   │   ├── banner-3.jpg
 │   │   ├── noticia-1.jpeg
