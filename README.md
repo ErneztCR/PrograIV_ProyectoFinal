@@ -1,5 +1,3 @@
-Tengo el siguiente readme, me ayudas a modificarlo con base a la imagen
-
 # InnoKeys - Sitio Web para Venta de Licencias de Software
 ## 📝 Descripción
 Sitio web responsivo de una sola página (single-page) para la startup "InnoKeys". El sitio está desarrollado utilizando HTML, CSS y Bootstrap, enfocado en promocionar la venta de licencias de software.
